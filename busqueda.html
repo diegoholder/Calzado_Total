@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calzado Total - Búsqueda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760726842/shus_pd0xtv.png">
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #fffaf8; }
+    .navbar-brand img { height: 40px; }
+    .hero-banner { background: linear-gradient(90deg, #ffae00, #ff6600); color: #fff; padding: 2rem; border-radius: 1rem; }
+    .hero-banner img { height: 140px; object-fit: contain; }
+    .product-card img { height: 140px; object-fit: cover; border-radius: .5rem; }
+    .bottom-nav { position: fixed; bottom: 0; left: 0; width: 100%; background: #ff5e00; display: flex; justify-content: space-around; padding: .4rem 0; }
+    .bottom-nav a { color: #fff; text-align: center; font-size: 1.3rem; text-decoration: none; }
+    .bottom-nav a.active { color: #ffe7d4; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar bg-white shadow-sm px-3">
+    <a href="index.html" class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760722383/calzado_total_n6sgnr.png" alt="Calzado Total">
+    </a>
+    <div>
+      <button class="btn btn-light"><i class="bi bi-bell"></i></button>
+      <button class="btn btn-light"><i class="bi bi-search"></i></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="container my-3">
+    <div class="hero-banner d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div>
+        <h3 class="fw-bold mb-1">¡Descuentos!</h3>
+        <p class="mb-2">Hasta <strong>55%</strong> en Zapatos de vestir</p>
+        <a href="#productos" class="btn btn-light btn-sm fw-bold text-danger">Ver más</a>
+      </div>
+      <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760720156/classic-black-leather-dress-shoes-free-png_exkqdm.webp" alt="Zapatillas" class="img-fluid mt-3 mt-md-0">
+    </div>
+  </section>
+
+<div class="container">
+    <div class="row">
+      
+      <!-- Filtros -->
+      <div class="col-lg-3 mb-4">
+        <div class="filter-sidebar">
+          <h5 class="mb-3">Filtrar por</h5>
+          
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Precio</label>
+            <input type="range" class="form-range" min="50" max="500" step="10">
+            <div class="d-flex justify-content-between">
+              <span>S/50</span>
+              <span>S/500</span>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Talla</label><br>
+            <div class="d-flex flex-wrap gap-2">
+              <button class="btn btn-outline-dark btn-sm">38</button>
+              <button class="btn btn-outline-dark btn-sm">39</button>
+              <button class="btn btn-outline-dark btn-sm">40</button>
+              <button class="btn btn-outline-dark btn-sm">41</button>
+              <button class="btn btn-outline-dark btn-sm">42</button>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Color</label>
+            <select class="form-select">
+              <option>Todos</option>
+              <option>Negro</option>
+              <option>Blanco</option>
+              <option>Marrón</option>
+              <option>Azul</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Marca</label>
+            <select class="form-select">
+              <option>Todos</option>
+              <option>Nike</option>
+              <option>Adidas</option>
+              <option>Puma</option>
+              <option>Clarks</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Tipo</label>
+            <select class="form-select">
+              <option>Todos</option>
+              <option>Casual</option>
+              <option>Deportivo</option>
+              <option>Formal</option>
+              <option>Sandalias</option>
+            </select>
+          </div>
+
+          <button class="btn btn-dark w-100 mt-3">Aplicar filtros</button>
+        </div>
+      </div>
+
+      <!-- Productos -->
+      <div class="col-lg-9">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="fw-bold">Resultados para “Zapatos de vestir”</h5>
+          <select class="form-select w-auto">
+            <option>Ordenar por</option>
+            <option>Precio: menor a mayor</option>
+            <option>Precio: mayor a menor</option>
+            <option>Más recientes</option>
+          </select>
+        </div>
+
+        <div class="row g-4">
+          <!-- Producto -->
+          <div class="col-sm-6 col-md-4">
+            <div class="card product-card">
+              <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760720806/zapavestir_oox6pg.jpg" class="product-img" alt="Zapatos de Vestir Barrett Negro">
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">Zapatos de Vestir Barrett Negro</h6>
+                <p class="price mb-1">S/189.90</p>
+                <a href="producto_zapatovestir.html"><button class="btn btn-outline-dark btn-sm w-100">Ver detalles</button></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card product-card">
+              <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760723830/zapavestir2_tlsgqf.jpg" class="product-img" alt="Zapatos de Vestir Bata Marrón">
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">Zapatos de Vestir Bata Marrón</h6>
+                <p class="price mb-1">S/229.90</p>
+                <button class="btn btn-outline-dark btn-sm w-100">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4">
+            <div class="card product-card">
+              <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760723830/zapavestir3_ffhy6o.jpg" class="product-img" alt="Zapatos de Vestir Comfort Marrón">
+              <div class="card-body text-center">
+                <h6 class="card-title mb-1">Zapatos de Vestir Comfort Marrón</h6>
+                <p class="price mb-1">S/259.90</p>
+                <button class="btn btn-outline-dark btn-sm w-100">Ver detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Barra inferior -->
+  <div class="bottom-nav">
+    <a href="cuenta.html"><i class="bi bi-person"></i></a>
+    <a href="index.html" class="active"><i class="bi bi-house-fill"></i></a>
+    <a href="checkout.html"><i class="bi bi-cart"></i></a>
+  </div>
+
+</body>
+</html>

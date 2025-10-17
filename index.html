@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calzado Total - Inicio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760726842/shus_pd0xtv.png">
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #fffaf8; }
+    .navbar-brand img { height: 40px; }
+    .hero-banner { background: linear-gradient(90deg, #ffae00, #ff6600); color: #fff; padding: 2rem; border-radius: 1rem; }
+    .hero-banner img { height: 140px; object-fit: contain; }
+    .product-card img { height: 140px; object-fit: cover; border-radius: .5rem; }
+    .bottom-nav { position: fixed; bottom: 0; left: 0; width: 100%; background: #ff5e00; display: flex; justify-content: space-around; padding: .4rem 0; }
+    .bottom-nav a { color: #fff; text-align: center; font-size: 1.3rem; text-decoration: none; }
+    .bottom-nav a.active { color: #ffe7d4; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <nav class="navbar bg-white shadow-sm px-3">
+    <a href="index.html" class="navbar-brand fw-bold d-flex align-items-center" href="#">
+      <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760722383/calzado_total_n6sgnr.png" alt="Calzado Total">
+    </a>
+    <div>
+      <a href="login.html"><button class="btn btn-light fw-semibold"><p>Iniciar Sesion</p></button></a>
+      <button class="btn btn-light"><i class="bi bi-search"></i></button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="container my-3">
+    <div class="hero-banner d-flex flex-column flex-md-row align-items-center justify-content-between">
+      <div>
+        <h3 class="fw-bold mb-1">¡Descuentos!</h3>
+        <p class="mb-2">Hasta <strong>55%</strong> en Zapatos de vestir</p>
+        <a href="#productos" class="btn btn-light btn-sm fw-bold text-danger">Ver más</a>
+      </div>
+      <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760720156/classic-black-leather-dress-shoes-free-png_exkqdm.webp" alt="Zapatillas" class="img-fluid mt-3 mt-md-0">
+    </div>
+  </section>
+
+<!-- Productos -->
+<section class="container pb-5 mb-5" id="productos">
+  <div class="row g-3">
+
+    <!-- Producto -->
+    <div class="col-6 col-md-3">
+      <a href="busqueda.html" class="text-decoration-none text-dark">
+        <div class="card border-0 product-card text-center shadow-sm">
+          <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760720806/zapavestir_oox6pg.jpg" alt="Zapatos de vestir">
+          <div class="card-body py-2">
+            <p class="fw-semibold mb-0">Zapatos de vestir</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card border-0 product-card text-center shadow-sm">
+        <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760720806/zapacasuales_t8xnxn.jpg" alt="Zapatos casual">
+        <div class="card-body py-2">
+          <p class="fw-semibold mb-0">Zapatos casual</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card border-0 product-card text-center shadow-sm">
+        <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760720806/botines_sthzw2.webp" alt="Botines">
+        <div class="card-body py-2">
+          <p class="fw-semibold mb-0">Botines</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card border-0 product-card text-center shadow-sm">
+        <img src="https://res.cloudinary.com/dbzdoyjbv/image/upload/v1760720806/zapatillas_r0mp3v.jpg" alt="Zapatillas">
+        <div class="card-body py-2">
+          <p class="fw-semibold mb-0">Zapatillas</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Barra inferior -->
+  <div class="bottom-nav">
+    <a href="cuenta.html"><i class="bi bi-person"></i></a>
+    <a href="index.html" class="active"><i class="bi bi-house-fill"></i></a>
+    <a href="checkout.html"><i class="bi bi-cart"></i></a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.js"></script>
+</body>
+</html>
